@@ -8,4 +8,4 @@ In the file src/constant/contractAddresses.ts I listed the addresses of the toke
 
 A sudden error may happen:
 "throw new Error('Please pass numbers as strings or BN objects to avoid precision errors.');" 
-I don’t know the reason. To solve it, I just had to visit "https://etherscan.io/address/0xa145ac099e3d2e9781c9c848249e2e6b256b030d" and refresh the page a couple of times, and then run the project again.
+I don’t know the reason why it’s happening. I try to restart a server.
