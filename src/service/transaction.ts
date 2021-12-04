@@ -50,7 +50,7 @@ export class TransactionService {
         );
       }
       writeCSV(results)
-    }, 1000 * 10);
+    }, 1000 * 60);
   }
 
 }
