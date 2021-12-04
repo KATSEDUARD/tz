@@ -6,4 +6,6 @@
 
 In the file src/constant/contractAddresses.ts I listed the addresses of the tokens manually due to the fact that I could not find an alternative solution to get all the addresses of the tokens using the web3 api.
 
-A sudden error may happen "throw new Error('Please pass numbers as strings or BN objects to avoid precision errors.');" I don’t know what it’s connected with. To solve it, I just had to go to here "https://etherscan.io/address/0xa145ac099e3d2e9781c9c848249e2e6b256b030d" and refresh the page a couple of times, and then run the project again.
+A sudden error may happen:
+"throw new Error('Please pass numbers as strings or BN objects to avoid precision errors.');" 
+I don’t know the reason. To solve it, I just had to visit "https://etherscan.io/address/0xa145ac099e3d2e9781c9c848249e2e6b256b030d" and refresh the page a couple of times, and then run the project again.
