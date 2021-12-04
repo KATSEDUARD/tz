@@ -11,7 +11,7 @@ export class TransactionService {
 
   public startMonitoring(): string {
     this.getTransactionData();
-    return 'Please wait 1 minute before first request. Requesting every 1 minute. Go to transaction/report to see file content.';
+    return 'Please wait 1 minute before the first request. Requesting every minute. Go to transaction/report to see content.';
   }
 
   public getReport(): string {
