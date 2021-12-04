@@ -31,7 +31,7 @@ export class TransactionService {
       let tBalance = '';
 
       await Web3Client.eth.getBalance(address, (error, wei) => {
-        ethBalance = Web3Client.utils.fromWei(Web3Client.utils.toBN(wei), // converts Number to BN, which is accepted by `toWei()`
+        ethBalance = Web3Client.utils.fromWei(Web3Client.utils.toBN(wei),
         'ether', 'ether');
       });
       for (let tAddress of contractAddresses) {
