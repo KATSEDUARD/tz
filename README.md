@@ -2,4 +2,4 @@
 2. Go to 'tz' directory by using 'cd tz'.
 3. Run 'npm install'
 4. Run 'ts-node Basic/bootstrap.ts' to start a server.
-5. Finally, go to 'http://localhost:3000' in your web browser.
+5. Finally, go to 'http://localhost:3000' in your web browser and follow instructions.
