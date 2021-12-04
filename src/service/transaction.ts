@@ -31,7 +31,8 @@ export class TransactionService {
       let tBalance = '';
 
       await Web3Client.eth.getBalance(address, (error, wei) => {
-        ethBalance = Web3Client.utils.fromWei(wei, 'ether');
+        ethBalance = Web3Client.utils.fromWei(Web3Client.utils.toBN(wei), // converts Number to BN, which is accepted by `toWei()`
+        'ether', 'ether');
       });
       for (let tAddress of contractAddresses) {
         tokenAddress = tAddress;
@@ -49,7 +50,7 @@ export class TransactionService {
         );
       }
       writeCSV(results)
-    }, 1000 * 60);
+    }, 1000 * 10);
   }
 
 }
